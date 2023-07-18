@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<exclude name ="one"/>
+</run>
+
+
+
+</groups>
+  <test thread-count="5" name="ModuleTest">
+  <groups>
+  <define name= "Smoketest">
+  <include name= "featureone"/>
+  
+  </define>
+  </groups>
+  
+    <classes>
+
+      <class name=".No"/>
+    </classes>
+  </test> <!-- ModuleTest -->
+</suite> <!-- Suite -->
